@@ -1,25 +1,46 @@
-# Image Processing Project 
-# Image Processing Pipeline
+# 🖼️ Image-to-Image Translation (Sketch to Photo | Day to Night)
 
-This project contains the data preprocessing and augmentation pipeline for two ML tasks:
-1.  Image-to-Image Translation (Sketch to Photo)
-2.  Crowd Density Estimation
+This project implements **Image-to-Image Translation** using **Deep Learning** techniques to transform visual domains — such as **Sketch to Photo** and **Day to Night**.  
+It uses **Generative Adversarial Networks (GANs)** to generate realistic and high-quality images.
 
-## Role: Research & Data Lead
+---
 
-The code in `src/` is used to process data from `data/raw/` and save the clean, augmented, and normalized results into `data/processed/`.
+## 🚀 Features
+- Convert **sketches into photorealistic images**
+- Transform **daytime scenes into nighttime views**
+- Built using **PyTorch** and **CycleGAN / Pix2Pix architectures**
+- Supports **custom datasets** for domain translation
+- High-resolution and visually accurate outputs
 
-### How to Run
+---
 
-1.  Add raw datasets to the `data/raw/` subfolders.
-2.  Install requirements: `pip install -r requirements.txt`
-3.  Run the pipeline for a specific project:
+## 🧠 Model Overview
+The project leverages **CycleGAN** for unpaired image translation tasks.  
+Each generator learns to translate images from one domain to another, while discriminators ensure realistic outputs.
 
-    ```bash
-    # To process the sketch-to-photo data
-    python src/main.py --project img2img
-    
-    # To process the crowd density data
-    python src/main.py --project crowd
-    ```
-4.  Fill out the `docs/dataset_report.md` with details on the data sources.
+
+---
+
+## 🛠️ Installation
+
+```bash
+# Clone the repository
+git clone https://github.com/yourusername/image-to-image-translation.git
+cd image-to-image-translation
+
+# Install dependencies
+pip install -r requirements.txt
+
+📚 Technologies Used
+
+Python
+
+PyTorch
+
+CycleGAN / Pix2Pix
+
+OpenCV, NumPy, Matplotlib
+
+🧾 License
+
+This project is licensed under the MIT License.
